@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');	
+
+body, html, header{
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+.hero {
+	height: 100%;
+	background: url('../img/hero-bg.jpg');
+	background-size: 100% 100%;
+	position: relative;
+	background-attachment: fixed;
+}
+
+.title {
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30%;
+}
+
+.logo {
+	margin-bottom: 50px;
+}
+
+.hero h1 {
+	letter-spacing: .16em;
+}
+
+.hero p {
+	line-height: 1.9em;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.hero h1, .hero p {
+	color: #FFF;
+}	
+
+.scroll {
+	position: absolute;
+	left: calc(50% - 12.5px);
+	bottom: 50px;
+}
+
+/* about */
+.container {
+	margin: 0 auto;
+	width: 900px;
+}
+
+section {
+	text-align: center;
+	border: 2px solid #3c3c3c;
+	border-top: 0;
+	margin: 160px 0;
+	padding: 40px 170px 40px;
+	font-weight: 300;
+	position: relative;
+}
+
+section h1 {
+	top: -.5em;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	margin-top: 0;
+}
+
+section h1:before, section h1:after {
+	position: absolute;
+	content: "";
+	display: block;
+	height: 2px;
+	width: 30%;
+	background-color: #3c3c3c;
+	top: .5em;
+	right: 0;
+}
+
+
+section h1:after {
+	left: 0;
+}
+
+.icon {
+	margin: 80px 0;
+}
+
+.icon h2 {
+	text-transform: uppercase;
+	color: #3c3c3c;
+}
+
+.services_bg {
+	background: url('../img/services.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 20px 0;
+}
+
+.inverse {
+	color: #FFF;
+	border: 2px solid #FFF;
+	border-top: none;
+	
+}
+
+.inverse h1:before, .inverse h1:after {
+	background-color: #FFF;
+}
+
+.feedback button {
+	border: none;
+	background-color: #3c3c3c;
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 0.7em 8em;
+	border: 2px solid transparent;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+}
+
+.feedback button:hover {
+	border: 2px solid #3c3c3c;
+	background-color: transparent;
+	color: #3c3c3c;
+}
+
+.portfolio {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.portfolio a {
+	width: calc(27.5% - 10px);
+	height: 240px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	color: #FFF;
+	position: relative;
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.portfolio span {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	transition: all .3s ease-in-out;
+}
+
+.portfolio a:hover > span{
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+}
+
+.portfolio a:nth-child(3n+2) {
+	width: 45%;
+}
+
+.portfolio a:nth-child(3n+3) {
+	margin-right: 0;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	justify-content: space-around;
+	width: 350px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
